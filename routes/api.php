@@ -58,10 +58,8 @@ Route::get("destaque/{destaque}", [ProdutoController::class, 'destaque']);
 
 Route::get("/analytic", [AnalyticController::class, "index"]);
 
-
 Route::get("/marcas", [MarcaController::class, "index"]);
 Route::get("/marca/{id}", [MarcaController::class, "show"]);
-
 
 Route::get("produto/{id}", [ProdutoController::class, 'getMarca']);
 Route::get("marca/{id}/produtos", [MarcaController::class, 'getProdutos']);
